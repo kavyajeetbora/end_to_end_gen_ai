@@ -1,0 +1,84 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+ENV/
+*.venv/
+*.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+*.spec
+
+# Log files
+*.log
+*.out
+*.err
+
+# Config files
+*.ini
+*.toml
+*.cfg
+*.yaml
+*.yml
+*.env
+
+# Caches
+*.mypy_cache/
+*.pytest_cache/
+*.pyre/
+.pytype/
+
+# NLP project specific
+*.model
+*.vector
+*.bin
+*.h5
+*.ckpt
+*.pt
+*.onnx
+
+# Data files
+*.csv
+*.tsv
+*.json
+*.parquet
+*.hdf5
+*.h5
+*.db
+*.sqlite3
+
+# Datasets
+data/
+datasets/
+raw_data/
+processed_data/
+artifacts/
+
+# Tokenizer files
+*.bpe
+*.spm
+*.sentencepiece
+*.vocab
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
