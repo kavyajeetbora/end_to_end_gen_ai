@@ -1,6 +1,5 @@
 import pickle
 from src.logger import logging
-import os
 
 
 def save_vector_store(vector_store_object, path):

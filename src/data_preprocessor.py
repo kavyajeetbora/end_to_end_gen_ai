@@ -1,8 +1,10 @@
 from langchain_community.document_loaders import UnstructuredURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from src.logger import logging
-import os
 
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 
 class URLLoader:
 

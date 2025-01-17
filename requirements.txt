@@ -1,12 +1,19 @@
 nltk==3.8.1
 langchain 
 langchain_community
-langchain-openai 
 unstructured 
 libmagic 
 python-magic 
-faiss-cpu 
-sentence-transformers 
-langchain-huggingface
 streamlit
+
+# # For Embeddings and Vector Store
+faiss-cpu 
+langchain-huggingface
+sentence-transformers 
+
+# # For LLM
+langchain-openai 
+
+
+
 

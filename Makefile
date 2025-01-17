@@ -3,6 +3,7 @@ VENV = venv
 PYTHON = python
 LOGS_DIR = logs
 ARTIFACTS_DIR = artifacts
+NLTK_DATA_DIR = $(VENV)/nltk_data
 
 ## Activate the virtual environment
 ACTIVATE = . $(VENV)/bin/activate
@@ -23,6 +24,14 @@ setup:
 	
 	@mkdir -p $(ARTIFACTS_DIR)
 	@echo "Created Artifacts folder"
+
+	@mkdir -p $(NLTK_DATA_DIR)
+	@echo "Created NLTK Data folder"
+
+	@echo "Downloading NLTK data..."
+	@export NLTK_DATA=$(NLTK_DATA_DIR)
+	@$(ACTIVATE) && python -m nltk.downloader -d $(NLTK_DATA_DIR) punkt
+	@$(ACTIVATE) && python -m nltk.downloader -d $(NLTK_DATA_DIR) averaged_perceptron_tagger_eng
 
 clean:
 	# Remove the virtual environment and any nltk data
