@@ -1,15 +1,17 @@
-from langchain.document_loaders import UnstructuredURLLoader
+from langchain_community.document_loaders import UnstructuredURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from logger import logging
+from src.logger import logging
+import os
 
-class url_loader:
+
+class URLLoader:
 
     def __init__(self, urls):
         self.urls = urls
 
         logging.info(f'Loading documents from {self.urls}')
         self.loader = UnstructuredURLLoader(
-            urls = self.url
+            urls = self.urls
         )
 
     def load(self):
@@ -33,6 +35,6 @@ class TextSplitter:
     def split(self):
         logging.info('Splitting documents')
         chunks = self.text_splitter.split_documents(self.documents)
-        logging.info(f"Documents split into {len(chunks)}")
+        logging.info(f"Documents split into {len(chunks)} chunks")
 
         return chunks 

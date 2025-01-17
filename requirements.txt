@@ -1,3 +1,4 @@
+nltk==3.8.1
 langchain 
 langchain_community
 langchain-openai 
@@ -8,3 +9,4 @@ faiss-cpu
 sentence-transformers 
 langchain-huggingface
 streamlit
+
