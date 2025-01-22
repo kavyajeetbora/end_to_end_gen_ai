@@ -2,9 +2,13 @@ nltk==3.8.1
 langchain 
 langchain_community
 unstructured 
+pymupdf
 libmagic 
 python-magic 
 streamlit
+
+## Vector database
+chromadb
 
 # # For Embeddings and Vector Store
 faiss-cpu 
@@ -14,6 +18,9 @@ sentence-transformers
 # # For LLM
 langchain-openai 
 
+requests
 
-
+## ollama
+ollama
+langchain_ollama
 
